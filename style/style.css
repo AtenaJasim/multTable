@@ -1,0 +1,39 @@
+/*
+style.css file
+Atena Jasim
+This file styles the page
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    width: 5%;
+    height: 5%;
+}
+
+#errorMsg {
+    color: red;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.mult-table th {
+    background: rgb(240, 164, 228);
+}
+
+.mult-table tr:nth-child(even) td:nth-child(odd), .mult-table tr:nth-child(odd) td:nth-child(even) {
+    background: rgb(205, 247, 205);
+}
+
+button {
+    background-color: rgb(247, 191, 239);
+    padding: 10px 15px;
+    border-radius: 999px;
+}
+
+button:hover {
+    background-color: rgb(238, 109, 219);
+}

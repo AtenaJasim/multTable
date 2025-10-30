@@ -1,0 +1,47 @@
+<!-- 
+Index.html file
+Atena Jasim
+Multiplication table generator base page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiplication Table</title>
+    <meta charset="utf-8">
+    <link href="style/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+    <div class="header">
+        <header class="solid">
+            <img src="images/multiplication.png" alt="multiplication sign"/>
+            <h1>Generate a Multiplication Table!</h1>
+            <img src="images/multiplication.png" alt="multiplication sign"/>
+        </header>
+    </div>
+    
+    <h2>Enter a range for the horizontal row of the table</h2>
+    <label for="horizontalInput1"></label>
+    <input type="number" id="horizontalInput1" placeholder="Enter first number">
+    <label for="horizontalInput2"></label>
+    <input type="number" id="horizontalInput2" placeholder="Enter last number">
+    
+    <h2>Enter a range for the vertical row of the table</h2>
+    <label for="verticalInput1"></label>
+    <input type="number" id="verticalInput1" placeholder="Enter first number">
+    <label for="verticalInput2"></label>
+    <input type="number" id="verticalInput2" placeholder="Enter last number">
+    
+    <br></br>
+    <button onclick="generateTable()">Generate Table!</button>
+
+    <p id="errorMsg"></p>
+    
+    <div id="tableWrapper" class="table-wrapper">
+        <div id="tableContainer"></div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
